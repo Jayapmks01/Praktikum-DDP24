@@ -15,7 +15,6 @@ print('Nama Saya', nama, 'dengan NIM', nim, 'Rombel Saya', rombel, 'tinggal di',
 
 
 
-
 # Menghitung Berat Badan Ideal
 print()
 print('===Berat Badan Ideal===')
