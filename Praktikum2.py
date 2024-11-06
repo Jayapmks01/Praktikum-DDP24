@@ -4,7 +4,7 @@ nama = 'Djaya Pamungkas'
 nim = '0110120007'
 rombel = '20SI03'
 asdos = 'Ka Lilik Setiawan'
-alamat = 'Jalan Jatijajar 1, Depok, Jawa Barat'
+alamat = 'Jalan Jatijajar 1, Depok, Jawa Barat' # Ini perbaikan
 
 print(f'Nama Saya {nama}')
 print(f'NIM Saya {nim}')
