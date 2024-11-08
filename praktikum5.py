@@ -54,3 +54,5 @@ match pilihan:
         print ('Luas Segitiga adalah', int(Lsegitiga))
     case _:
         print('Kamu salah memasukan pilihan')
+
+print()
