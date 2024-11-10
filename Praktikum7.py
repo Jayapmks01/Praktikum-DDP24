@@ -88,15 +88,15 @@ else:
 print()
 # Soal UTS Nomor 2
 print('=== 2. Program Perjalanan ===')
-nama_kendaraan = input('Masukan Nama Kendaraan Kamu: ') # Motor
-jenis_bensin = input('Masukan Jenis Bensin: ') .lower() # Pertamax
+nama_kendaraan = input('Masukan Nama Kendaraan Kamu: ') # Mobil
+jenis_bensin = input('Masukan Jenis Bensin: ') .lower() # Pertalite
 
-match jenis_bensin:
+match jenis_bensin: # Pertalite
     case 'pertalite':
         print('Bensin Yang Kamu Gunakan Adalah Pertalite')
         harga_bensin = 10000
         jarak_bensin = 12
-        kota_tujuan = input('Masukan Kota Tujuan: ').lower()
+        kota_tujuan = input('Masukan Kota Tujuan: ').lower() # Bekasi
         if kota_tujuan == 'jakarta':
             print('Kota Tujuan Kamu Adalah Jakarta')
             jarak_kota = 20
@@ -112,15 +112,16 @@ match jenis_bensin:
         elif kota_tujuan == 'bekasi':
             print('Kota Tujuan Kamu Adalah Bekasi')
             jarak_kota = 35.7
-            pemakaian_bensin = jarak_kota / jarak_bensin
-            total_harga = pemakaian_bensin * harga_bensin
+            pemakaian_bensin = jarak_kota / jarak_bensin # 35.7 / 12 = 2.97 Liter 
+            total_harga = pemakaian_bensin * harga_bensin # 2.97 * 10000 = 29.700 Rupiah
             print()
             print('Rincian Kendaraan dan Biaya Perjalanan Menuju Bekasi Adalah: ')
-            print('Nama Kendaraan: ', nama_kendaraan)
-            print('Jenis Bensin: ', jenis_bensin)
-            print('Kota Tujuan: ', kota_tujuan)
-            print('Pemakaian Bensin: ', "{:.2f}".format(pemakaian_bensin), 'Liter')
-            print('Total Harga: ', "{:.2f}".format(total_harga), 'Rupiah')
+            print('Nama Kendaraan: ', nama_kendaraan) # Mobil
+            print('Jenis Bensin: ', jenis_bensin) # Pertalite
+            print('Kota Tujuan: ', kota_tujuan) # Bekasi
+            print('Pemakaian Bensin: ', "{:.2f}".format(pemakaian_bensin), 'Liter') # 2.97 Liter
+            # print('Pemakaian Bensin: ', pemakaian_bensin, 'Liter') # 2.97 Liter
+            print('Total Harga: ', "{:.2f}".format(total_harga), 'Rupiah') # 29.700
         elif kota_tujuan == 'depok':
             print('Kota Tujuan Kamu Adalah Depok')
             jarak_kota = 99
@@ -185,8 +186,61 @@ print()
 # Soal UTS Nomor 3
 print('=== 3. Program Perhitungan Kelipatan 3 ===')
 
-for i in range(1, 20):
+for i in range(1, 21):
   if i % 3 == 0:
     print('Nurul Fikri')
   else:
     print(i)
+
+a = 1
+while a <= 20:
+    if a % 3 == 0:
+        print('STT Nurul Fikri')
+    else:
+        print(a)
+    a+=1
+
+print()
+# Program Pemesanan Makanan Dengan Dictionary
+print('=== 4. Program Pemesanan Dictionary ===')
+menu_makanan={
+  "Nasi Goreng":15000,
+  "Mie Goreng":12000,
+  "Ayam Goreng":10000
+}
+
+menu_minuman={
+  "Es Teh":5000,
+  "Es Jeruk":7000,
+  "Es Kopi":6000
+}
+
+nama=input("Masukkan nama anda: ")
+no_hp=input("Masukkan nomor handphone anda: ")
+pesan=input("Masukkan pesanan anda (Makanan/Minuman): ").lower()
+
+harga=0
+if pesan=="makanan":
+  print("Kamu Memesan Menu Makanan")
+  for i in menu_makanan:
+    print(i,menu_makanan[i])
+  pesanan_makanan = input("Masukkan pesanan makanan: ")
+  if pesanan_makanan in menu_makanan:
+    harga += menu_makanan[pesanan_makanan]
+  else:
+    print("Pesanan makanan tidak valid")
+    
+elif pesan=="minuman":
+  print("Kamu Memesan Menu Minuman")
+  for i in menu_minuman:
+    print(i,menu_minuman[i])
+  pesanan_minuman = input("Masukkan pesanan minuman: ")
+  if pesanan_minuman in menu_minuman:
+    harga += menu_minuman[pesanan_minuman]
+  else:
+    print("Pesanan minuman tidak valid")
+    
+else:
+  print("Pesanan tidak valid")
+  
+print("Total biaya: Rp", harga)
