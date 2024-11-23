@@ -7,7 +7,7 @@ print()
 bilangan = int(input('Masukan bilangan anda: '))
 
 # Proses dan Output
-if bilangan % 2 == 0:
+if bilangan % 2 == 0: # 2 * 2 = 4 // 0
     print(bilangan, 'Merupakan bilangan genap')
 else:
     print(bilangan, 'Merupakan bilangan ganjil')

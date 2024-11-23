@@ -1,89 +1,89 @@
 # Soal UTS Nomor 1
-print('=== 1. Program Pemesanan ===')
-nama = input('Masukan Nama Kamu: ')
-no_hp = input('Masukan Nomer Telpon Kamu: ')
-pesanan = input("""Masukan Kategori Pesanan Kamu =  
-1. Makanan
-2. Minuman
-(Pilih 1 atau 2):  """) 
-print()
+# print('=== 1. Program Pemesanan ===')
+# nama = input('Masukan Nama Kamu: ') # Lia
+# no_hp = input('Masukan Nomer Telpon Kamu: ') # 08678652456
+# pesanan = input("""Masukan Kategori Pesanan Kamu =  
+# 1. Makanan
+# 2. Minuman
+# (Pilih 1 atau 2):  """) # 1
+# print()
 
-if pesanan == '1':
-    print('Kamu memilih menu makanan')
-    menu = int(input("""Masukan Pilihan Menu = 
-    1. Nasi Goreng - 15000
-    2. Mie Goreng - 12000
-    3. Ayam Geprek - 18000 
-    (Pilih 1, 2, 3): """))
-    print()
-    if menu == 1:
-        print('=== Kamu Memilih Menu Makanan Nasi Goreng ===')
-        harga = 15000
-        # uang = int(input('Masukan Uang Kamu: '))
-        jumlah_pesanan = int(input('Masukan Jumlah Pesanan: '))
-        pembayaran = harga*jumlah_pesanan
-        # kembalian = uang - pembayaran
-        print("Nota : Pemesanan atas nama", nama, "dengan nomor handphone", no_hp, "memilih menu pesanan", menu, "yaitu Nasi Goreng dengan jumlah pesanan", jumlah_pesanan, "dan jumlah pembayaran yang harus dibayarkan berjumlah", pembayaran)
-        # print('Uang Kembalian: ', kembalian)
-    elif menu == 2:
-        print('=== Kamu Memilih Menu Makanan Mie Goreng ===')
-        harga = 12000
-        # uang = int(input('Masukan Uang Kamu: '))
-        jumlah_pesanan = int(input('Masukan Jumlah Pesanan: '))
-        pembayaran = harga*jumlah_pesanan
-        # kembalian = uang - pembayaran
-        print("Nota : Pemesanan atas nama", nama, "dengan nomor handphone", no_hp, "memilih menu pesanan", menu, "yaitu Mie Goreng dengan jumlah pesanan", jumlah_pesanan, "dan jumlah pembayaran yang harus dibayarkan berjumlah", pembayaran)
-        # print('Uang Kembalian: ', kembalian)
-    elif menu == 3:
-        print('=== Kamu Memilih Menu Makanan Ayam Geprek ===')
-        harga = 18000
-        # uang = int(input('Masukan Uang Kamu: '))
-        jumlah_pesanan = int(input('Masukan Jumlah Pesanan: '))
-        pembayaran = harga*jumlah_pesanan
-        # kembalian = uang - pembayaran
-        print("Nota : Pemesanan atas nama", nama, "dengan nomor handphone", no_hp, "memilih menu pesanan", menu, "yaitu Ayam Geprek dengan jumlah pesanan", jumlah_pesanan, "dan jumlah pembayaran yang harus dibayarkan berjumlah", pembayaran)
-        # print('Uang Kembalian: ', kembalian)
-    else:
-        print('Tidak ada menu pilihan, Silahkan Ulangi!')
-elif pesanan == '2':
-    print('=== Kamu Memilih Menu Minuman ===')
-    menu = int(input("""Masukan Pilihan Menu = 
-    1. Es Teh Manis - 5000
-    2. Good Day - 6000
-    3. Es Jeruk - 6000 
-    (Pilih 1, 2, 3): """))
-    print()
-    if menu == 1:
-        print('=== Kamu Memilih Menu Minuman Es Teh Manis ===')
-        harga = 5000
-        # uang = int(input('Masukan Uang Kamu: '))
-        jumlah_pesanan = int(input('Masukan Jumlah Pesanan: '))
-        pembayaran = harga*jumlah_pesanan
-        # kembalian = uang - pembayaran
-        print("Nota : Pemesanan atas nama", nama, "dengan nomor handphone", no_hp, "memilih menu pesanan", menu, "yaitu Es Teh Manis dengan jumlah pesanan", jumlah_pesanan, "dan jumlah pembayaran yang harus dibayarkan berjumlah", pembayaran)
-        # print('Uang Kembalian: ', kembalian)
-    elif menu == 2:
-        print('=== Kamu Memilih Menu Minuman Good Day ===')
-        harga = 6000
-        # uang = int(input('Masukan Uang Kamu: '))
-        jumlah_pesanan = int(input('Masukan Jumlah Pesanan: '))
-        pembayaran = harga*jumlah_pesanan
-        # kembalian = uang - pembayaran
-        print("Nota : Pemesanan atas nama", nama, "dengan nomor handphone", no_hp, "memilih menu pesanan", menu, "yaitu Es Teh Manis dengan jumlah pesanan", jumlah_pesanan, "dan jumlah pembayaran yang harus dibayarkan berjumlah", pembayaran)
-        # print('Uang Kembalian: ', kembalian)
-    elif menu == 3:
-        print('=== Kamu Memilih Menu Minuman Es Jeruk ===')
-        harga = 6000
-        # uang = int(input('Masukan Uang Kamu: '))
-        jumlah_pesanan = int(input('Masukan Jumlah Pesanan: '))
-        pembayaran = harga*jumlah_pesanan
-        # kembalian = uang - pembayaran
-        print("Nota : Pemesanan atas nama", nama, "dengan nomor handphone", no_hp, "memilih menu pesanan", menu, "yaitu Es Teh Manis dengan jumlah pesanan", jumlah_pesanan, "dan jumlah pembayaran yang harus dibayarkan berjumlah", pembayaran)
-        # print('Uang Kembalian: ', kembalian)
-    else:
-        print('Tidak ada menu pilihan, Silahkan Ulangi!')
-else:
-    print('Masukan Kata Dengan Benar!')
+# if pesanan == '1':
+#     print('Kamu memilih menu makanan')
+#     menu = int(input("""Masukan Pilihan Menu = 
+#     1. Nasi Goreng - 15000
+#     2. Mie Goreng - 12000
+#     3. Ayam Geprek - 18000 
+#     (Pilih 1, 2, 3): """)) # 1
+#     print()
+#     if menu == 1:
+#         print('=== Kamu Memilih Menu Makanan Nasi Goreng ===')
+#         harga = 15000
+#         # uang = int(input('Masukan Uang Kamu: '))
+#         jumlah_pesanan = int(input('Masukan Jumlah Pesanan: ')) # 4
+#         pembayaran = harga*jumlah_pesanan
+#         # kembalian = uang - pembayaran
+#         print("Nota : Pemesanan atas nama", nama, "dengan nomor handphone", no_hp, "memilih menu pesanan", menu, "yaitu Nasi Goreng dengan jumlah pesanan", jumlah_pesanan, "dan jumlah pembayaran yang harus dibayarkan berjumlah", pembayaran)
+#         # print('Uang Kembalian: ', kembalian)
+#     elif menu == 2:
+#         print('=== Kamu Memilih Menu Makanan Mie Goreng ===')
+#         harga = 12000
+#         # uang = int(input('Masukan Uang Kamu: '))
+#         jumlah_pesanan = int(input('Masukan Jumlah Pesanan: '))
+#         pembayaran = harga*jumlah_pesanan
+#         # kembalian = uang - pembayaran
+#         print("Nota : Pemesanan atas nama", nama, "dengan nomor handphone", no_hp, "memilih menu pesanan", menu, "yaitu Mie Goreng dengan jumlah pesanan", jumlah_pesanan, "dan jumlah pembayaran yang harus dibayarkan berjumlah", pembayaran)
+#         # print('Uang Kembalian: ', kembalian)
+#     elif menu == 3:
+#         print('=== Kamu Memilih Menu Makanan Ayam Geprek ===')
+#         harga = 18000
+#         # uang = int(input('Masukan Uang Kamu: '))
+#         jumlah_pesanan = int(input('Masukan Jumlah Pesanan: '))
+#         pembayaran = harga*jumlah_pesanan
+#         # kembalian = uang - pembayaran
+#         print("Nota : Pemesanan atas nama", nama, "dengan nomor handphone", no_hp, "memilih menu pesanan", menu, "yaitu Ayam Geprek dengan jumlah pesanan", jumlah_pesanan, "dan jumlah pembayaran yang harus dibayarkan berjumlah", pembayaran)
+#         # print('Uang Kembalian: ', kembalian)
+#     else:
+#         print('Tidak ada menu pilihan, Silahkan Ulangi!')
+# elif pesanan == '2':
+#     print('=== Kamu Memilih Menu Minuman ===')
+#     menu = int(input("""Masukan Pilihan Menu = 
+#     1. Es Teh Manis - 5000
+#     2. Good Day - 6000
+#     3. Es Jeruk - 6000 
+#     (Pilih 1, 2, 3): """))
+#     print()
+#     if menu == 1:
+#         print('=== Kamu Memilih Menu Minuman Es Teh Manis ===')
+#         harga = 5000
+#         # uang = int(input('Masukan Uang Kamu: '))
+#         jumlah_pesanan = int(input('Masukan Jumlah Pesanan: '))
+#         pembayaran = harga*jumlah_pesanan
+#         # kembalian = uang - pembayaran
+#         print("Nota : Pemesanan atas nama", nama, "dengan nomor handphone", no_hp, "memilih menu pesanan", menu, "yaitu Es Teh Manis dengan jumlah pesanan", jumlah_pesanan, "dan jumlah pembayaran yang harus dibayarkan berjumlah", pembayaran)
+#         # print('Uang Kembalian: ', kembalian)
+#     elif menu == 2:
+#         print('=== Kamu Memilih Menu Minuman Good Day ===')
+#         harga = 6000
+#         # uang = int(input('Masukan Uang Kamu: '))
+#         jumlah_pesanan = int(input('Masukan Jumlah Pesanan: '))
+#         pembayaran = harga*jumlah_pesanan
+#         # kembalian = uang - pembayaran
+#         print("Nota : Pemesanan atas nama", nama, "dengan nomor handphone", no_hp, "memilih menu pesanan", menu, "yaitu Es Teh Manis dengan jumlah pesanan", jumlah_pesanan, "dan jumlah pembayaran yang harus dibayarkan berjumlah", pembayaran)
+#         # print('Uang Kembalian: ', kembalian)
+#     elif menu == 3:
+#         print('=== Kamu Memilih Menu Minuman Es Jeruk ===')
+#         harga = 6000
+#         # uang = int(input('Masukan Uang Kamu: '))
+#         jumlah_pesanan = int(input('Masukan Jumlah Pesanan: '))
+#         pembayaran = harga*jumlah_pesanan
+#         # kembalian = uang - pembayaran
+#         print("Nota : Pemesanan atas nama", nama, "dengan nomor handphone", no_hp, "memilih menu pesanan", menu, "yaitu Es Teh Manis dengan jumlah pesanan", jumlah_pesanan, "dan jumlah pembayaran yang harus dibayarkan berjumlah", pembayaran)
+#         # print('Uang Kembalian: ', kembalian)
+#     else:
+#         print('Tidak ada menu pilihan, Silahkan Ulangi!')
+# else:
+#     print('Masukan Kata Dengan Benar!')
 
 print()
 # Soal UTS Nomor 2
@@ -182,65 +182,65 @@ match jenis_bensin: # Pertalite
     case _:
         print('Masukan Kata Dengan Benar!')
 
-print()
-# Soal UTS Nomor 3
-print('=== 3. Program Perhitungan Kelipatan 3 ===')
+# print()
+# # Soal UTS Nomor 3
+# print('=== 3. Program Perhitungan Kelipatan 3 ===')
 
-for i in range(1, 21):
-  if i % 3 == 0:
-    print('Nurul Fikri')
-  else:
-    print(i)
+# for i in range(1, 21):
+#   if i % 3 == 0:
+#     print('Nurul Fikri')
+#   else:
+#     print(i)
 
-a = 1
-while a <= 20:
-    if a % 3 == 0:
-        print('STT Nurul Fikri')
-    else:
-        print(a)
-    a+=1
+# a = 1
+# while a <= 20:
+#     if a % 3 == 0:
+#         print('STT Nurul Fikri')
+#     else:
+#         print(a)
+#     a+=1
 
-print()
-# Program Pemesanan Makanan Dengan Dictionary
-print('=== 4. Program Pemesanan Dictionary ===')
-menu_makanan={
-  "Nasi Goreng":15000,
-  "Mie Goreng":12000,
-  "Ayam Goreng":10000
-}
+# print()
+# # Program Pemesanan Makanan Dengan Dictionary
+# print('=== 4. Program Pemesanan Dictionary ===')
+# menu_makanan={
+#   "Nasi Goreng":15000,
+#   "Mie Goreng":12000,
+#   "Ayam Goreng":10000
+# }
 
-menu_minuman={
-  "Es Teh":5000,
-  "Es Jeruk":7000,
-  "Es Kopi":6000
-}
+# menu_minuman={
+#   "Es Teh":5000,
+#   "Es Jeruk":7000,
+#   "Es Kopi":6000
+# }
 
-nama=input("Masukkan nama anda: ")
-no_hp=input("Masukkan nomor handphone anda: ")
-pesan=input("Masukkan pesanan anda (Makanan/Minuman): ").lower()
+# nama=input("Masukkan nama anda: ")
+# no_hp=input("Masukkan nomor handphone anda: ")
+# pesan=input("Masukkan pesanan anda (Makanan/Minuman): ").lower()
 
-harga=0
-if pesan=="makanan":
-  print("Kamu Memesan Menu Makanan")
-  for i in menu_makanan:
-    print(i,menu_makanan[i])
-  pesanan_makanan = input("Masukkan pesanan makanan: ")
-  if pesanan_makanan in menu_makanan:
-    harga += menu_makanan[pesanan_makanan]
-  else:
-    print("Pesanan makanan tidak valid")
+# harga=0
+# if pesan=="makanan":
+#   print("Kamu Memesan Menu Makanan")
+#   for i in menu_makanan:
+#     print(i,menu_makanan[i])
+#   pesanan_makanan = input("Masukkan pesanan makanan: ")
+#   if pesanan_makanan in menu_makanan:
+#     harga += menu_makanan[pesanan_makanan]
+#   else:
+#     print("Pesanan makanan tidak valid")
     
-elif pesan=="minuman":
-  print("Kamu Memesan Menu Minuman")
-  for i in menu_minuman:
-    print(i,menu_minuman[i])
-  pesanan_minuman = input("Masukkan pesanan minuman: ")
-  if pesanan_minuman in menu_minuman:
-    harga += menu_minuman[pesanan_minuman]
-  else:
-    print("Pesanan minuman tidak valid")
+# elif pesan=="minuman":
+#   print("Kamu Memesan Menu Minuman")
+#   for i in menu_minuman:
+#     print(i,menu_minuman[i])
+#   pesanan_minuman = input("Masukkan pesanan minuman: ")
+#   if pesanan_minuman in menu_minuman:
+#     harga += menu_minuman[pesanan_minuman]
+#   else:
+#     print("Pesanan minuman tidak valid")
     
-else:
-  print("Pesanan tidak valid")
+# else:
+#   print("Pesanan tidak valid")
   
-print("Total biaya: Rp", harga)
+# print("Total biaya: Rp", harga)
